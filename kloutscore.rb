@@ -1,19 +1,9 @@
 require 'sinatra'
 
 get '/' do
-  'Hello world!'
+  'Upload your .csv file of Twitter handles; output is not saved. Klout score analysis includes Score, True Reach, Amplification, Network and Klout Style. '
 end
 
 get '/' do
-klout git:(master) k = Klout::API.new('wp4e3hxhbkktkyd45k59b9nk')
-k = Klout::API.new('wp4e3hxhbkktkyd45k59b9nk',{:format => 'xml',:secure=>true})
-
-k.klout('dhh')
-k.klout('dhh, rails')
-
-k.show('dhh')
-k.topics('dhh')
-
-k.influencer_of('rails')
-k.influenced_by('dhh, rails')
-end
+  'insert spreadsheet here'
+end 
