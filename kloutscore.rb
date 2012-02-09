@@ -1,9 +1,15 @@
 require 'sinatra'
+require 'klout'
+require 'json'
+k = Klout::API.new('wp4e3hxhbkktkyd45k59b9nk')
 
 get '/' do
-  'Upload your .csv file of Twitter handles; output is not saved. Klout score analysis includes Score, True Reach, Amplification, Network and Klout Style. '
+  erb :test
 end
 
-get '/' do
-  'insert spreadsheet here'
+post '/' do
+  content_type :json
+  twitter_handle = params[:twitter_handle]
+  k.klout(twitter_handle).to_json 
+
 end 

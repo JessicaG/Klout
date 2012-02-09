@@ -1,2 +1,2 @@
-require './klout'
+require './kloutscore'
 run Sinatra::Application
