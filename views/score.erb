@@ -1,0 +1,12 @@
+<table class="klout_table" width="50%">
+<tr>
+<th>Twitter Handle</th>
+<th>Klout Score</th>
+</tr>
+<% for @user in @score["users"] %>
+<tr>
+<td><%= @user["twitter_screen_name"] %></td>
+<td><%= @user["kscore"] %></td>
+</tr>
+<% end %> 
+</table>

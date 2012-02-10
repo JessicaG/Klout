@@ -1,0 +1,27 @@
+
+table.klout_table tr {
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: solid;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.klout_table th {
+	border-width: 1px;
+	padding: 1px;
+	border-style: groove;
+	border-color: gray;
+	background-color: rgb(255, 255, 240);
+	-moz-border-radius: ;
+}
+table.klout_table td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: groove;
+	border-color: gray;
+	background-color: rgb(255, 255, 240);
+	-moz-border-radius: ;
+}
+
+
